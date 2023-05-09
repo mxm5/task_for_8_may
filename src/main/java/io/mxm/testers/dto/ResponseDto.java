@@ -1,6 +1,9 @@
 package io.mxm.testers.dto;
 
+import lombok.Data;
+
+@Data
 public class ResponseDto {
-    Object data;
     String error;
+    Object data;
 }
