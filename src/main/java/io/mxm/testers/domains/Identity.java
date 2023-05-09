@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.UUID;
 
 @Entity
 @Getter
@@ -19,6 +20,14 @@ import java.util.Collections;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Identity implements UserDetails, tokenSubject {
+
+    public Identity(String username, String password, Studnet studnet) {
+        this.username = username;
+        this.password = password;
+        this.studnet = studnet;
+        this.role =Studnet.class.getName();
+        this.subject = UUID.randomUUID().toString();
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
