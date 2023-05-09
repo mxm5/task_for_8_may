@@ -1,6 +1,5 @@
 package io.mxm.testers.domains;
 
-import io.mxm.testers.repository.LessonRepository;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Studnet {
+public class Studnet  {
     public Studnet(Integer age, String firstName, String lastName, Long studentCode) {
         this.age = age;
         this.firstName = firstName;

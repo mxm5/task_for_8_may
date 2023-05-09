@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -16,7 +15,9 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Teacher {
+public class Teacher  {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -69,4 +70,6 @@ public class Teacher {
     public boolean addLesson(Lesson lesson) {
         return lessons.add(lesson);
     }
+
+
 }

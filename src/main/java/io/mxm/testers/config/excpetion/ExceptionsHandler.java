@@ -1,4 +1,4 @@
-package io.mxm.testers.config;
+package io.mxm.testers.config.excpetion;
 
 import io.mxm.testers.dto.ResponseDto;
 import org.jetbrains.annotations.NotNull;
